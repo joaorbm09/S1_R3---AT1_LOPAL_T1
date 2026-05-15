@@ -1,3 +1,5 @@
+# Versão comentada da tabela de preços
+# Este bloco comentado mostra uma primeira tentativa de armazenar produtos e preços
 # print("Sua tabela")
 # tabela = {"produtos":["Salgado", "Lanche", "Suco", "Refrigereante", "Doce" ] , "precos":["R$ 4,50","R$6,50","R$ 3,00","R$ 3,50","R$ 1,00"]}
 # produtos = tabela["produtos"]
@@ -5,9 +7,9 @@
 # tabela_final = [produtos, precos]
 # print(tabela_final)
 
-# acima esta o que eu tinha feito, abaixo esta uma versão com ia para deixar a listagem organizada
-
+# Exibe um cabeçalho para a tabela de preços
 print("--- Sua Tabela de Preços ---")
+# Cria um dicionário com listas de produtos e preços
 tabela = {
     "produtos": ["Salgado", "Lanche", "Suco", "Refrigerante", "Doce"], 
     "precos": ["R$ 4,50", "R$ 6,50", "R$ 3,00", "R$ 3,50", "R$ 1,00"]
@@ -15,8 +17,10 @@ tabela = {
 produtos = tabela["produtos"]
 precos = tabela["precos"]
 
+# Combina os produtos e preços em pares correspondentes
 tabela_final = list(zip(produtos, precos))
 
+# Percorre cada par e imprime em formato alinhado
 for produto, preco in tabela_final:
     print(f"{produto:<15} -> {preco}")
 
